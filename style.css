@@ -1,0 +1,215 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+
+.nav-text li {
+    position: relative;
+  }
+
+.nav-text li a{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-text li a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+    width: 0px;
+    height: 2px;
+    background: #6e1f8e;
+    transition: all 0.45s;
+  }
+
+  .nav-text li a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+  .carousel-caption {
+    margin-left: -200px;
+  }
+
+  .carousel-caption h5 {
+    color: #6e1f8e;
+    font-size: 70px;
+    font-weight: 600;
+  }
+  .carousel-caption h6 {
+    color: #6e1f8e;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .carousel .carousel-indicators button {
+    width: 26px;
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #6e1f8e;
+ }
+
+ .placement-card {
+  position: relative;
+ }
+
+ .placement-details {
+  position: absolute;
+  top: 0px;
+  background-color: #762696a5;
+  color: white;
+  height: 250px;
+  opacity: 0;
+  padding: 30px;
+  text-align: center;
+ }
+
+ .placement-details:hover {
+  opacity: 1;
+  transition-duration: 0.3s;
+ }
+
+ .placement-details h3 {
+  font-size: 20px;
+  font-weight: bold;
+ }
+ .placement-details h6 {
+  font-size: 14px;
+  font-weight: bold;
+ }
+ .placement-details p {
+  font-size: 14px;
+  margin-top: -10px;
+ }
+
+
+ .courses-box {
+  background-image: url(https://wallpaperset.com/w/full/6/3/5/362666.jpg);
+  background-size: cover;
+ }
+
+ .course-card {
+  position: relative;
+ }
+
+ .course-overlay {
+  position: absolute;
+  top: 0px;
+  background-color: #6f1f8e;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+ }
+
+ .course-overlay:hover {
+  opacity: 0;
+  transition-duration: 0.5s;
+ }
+
+
+/* Scrollbar */
+ #insta-feed::-webkit-scrollbar {
+  width:7px;
+  border-radius: 7px;
+}
+ 
+#insta-feed::-webkit-scrollbar-track {
+  background:#d1d1d1;
+}
+
+#insta-feed::-webkit-scrollbar-thumb {
+  background: #6e1f8e;
+}
+
+#insta-feed::-webkit-scrollbar-thumb:hover {
+  background: #6e1f8e;
+}
+
+
+.banner {
+  position: relative;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  opacity: 0.5;
+}
+
+
+.card{
+  border: none;
+}
+.card h5 {
+color: rgb(91, 91, 91);
+}
+.card:hover {
+  box-shadow: 0px 0px 10px 5px rgba(186, 100, 220, 0.225);
+  transition-duration: 0.6s;
+}
+.card:hover h5 {
+  color: #6e1f8e;
+}
+
+
+.carousel-item .col-1 {
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  left: 30px;
+  top: 50px;
+}
+
+.img-box {
+  position: relative;
+
+}
+
+.img-overlay-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 10px 3px rgba(121, 121, 121, 0.225);
+}
+.img-overlay-2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  box-shadow: 0px 0px 10px 3px rgba(121, 121, 121, 0.225);
+}
+.img-white {
+  position: absolute;
+  margin: auto;
+  top: 100px;
+  left: 100px;
+  box-shadow: 0px 0px 10px 10px rgba(207, 207, 207, 0.225);
+}
+
+
+.pen-banner {
+background-image: url(https://images.pexels.com/photos/7054785/pexels-photo-7054785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); 
+height: 500px;
+background-size: cover;
+background-position: bottom;
+}
+
+
+.footer-text p a{
+  text-decoration: none;
+  font-size: 16px;
+}
+.footer-text p:hover {
+  border-bottom: 1px solid #6e1f8e;
+  transition-duration: 1s;
+  
+}
+

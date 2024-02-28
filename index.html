@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminar Technolab</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- logo -->
+    <link rel="icon" href="https://play-lh.googleusercontent.com/h9JoU3a5P3pZYLXJApV47mIkjr08l7fE_B-Ou7XYqNrEpXHB_44X2awX3ebiqHoI6GA">
+
+
+</head>
+
+<body>
+
+  <section id="home"></section>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div style="margin-left: 14%;">
+            <img src="https://www.luminartechnolab.com/static/media/logo%20vanner%200.1.ad159943.png" alt="luminar-logo" style="height: 70px;">
+        </div>
+
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto  nav-text">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Placement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+
+      </nav>
+
+      
+      <!-- Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide autoplay bg-body-tertiary" data-bs-ride="carousel">
+        <div class="carousel-indicators mx-auto d-block ms-5 ps-5">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner w-100">
+          <div class="carousel-item active w-100 row" data-bs-interval="2000">
+            <div class="carousel-caption col text-start text-dark w-50" style="padding-left: 80px;">
+              <h5>Kerala's No.1</h5>
+              <h6>Software Training Institute in Kochi (Cochin) |Luminar Technolab </h6>
+              <p class="mt-5">Luminar Technolab is a No.1 Software Training Institute in Kochi & Mavoor Road Calicut, offering you Job Oriented courses on Data Science, Data Analytics, Machine Learning, Python, Big Data & Other Certified IT programs</p>
+            <div class="row mt-4 mb-4" style="width: 230px;">
+                <div class="col" style="border-right: 3px solid #6e1f8e;"><img src="data:image/jpeg;base64,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" alt="" style="height: 80px;"></div>
+                <div class="col"><img src="https://cdn.freebiesupply.com/logos/large/2x/iso-31-logo-svg-vector.svg" alt="" style="height: 80px;"></div>
+            </div>
+            <button class="btn rounded-pill ps-3 pe-3 mb-4 text-light" style="background-color: #6e1f8e;">View Courses</button>
+            </div>
+            <div class="col text-end">
+                <img src="./Images/placements-img.png" class=" text-end me-5" alt="..." style="scale: 80%;">
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-caption col text-start text-dark w-50" style="padding-left: 80px;">
+                <h5>Kerala's No.1</h5>
+                <h6>Software Training Institute in Kochi (Cochin) |Luminar Technolab </h6>
+                <p class="mt-5">Luminar Technolab is a No.1 Software Training Institute in Kochi & Mavoor Road Calicut, offering you Job Oriented courses on Data Science, Data Analytics, Machine Learning, Python, Big Data & Other Certified IT programs</p>
+              <div class="row mt-4 mb-4" style="width: 230px;">
+                  <div class="col" style="border-right: 3px solid #6e1f8e;"><img src="data:image/jpeg;base64,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" alt="" style="height: 80px;"></div>
+                  <div class="col"><img src="https://cdn.freebiesupply.com/logos/large/2x/iso-31-logo-svg-vector.svg" alt="" style="height: 80px;"></div>
+              </div>
+              <button class="btn rounded-pill ps-3 pe-3 mb-4 text-light" style="background-color: #6e1f8e;">View Courses</button>
+              </div>
+              <div class="col text-end">
+                  <img src="./Images/courses-img.png" class=" text-end me-5" alt="..." style="scale: 80%;">
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-caption col text-start text-dark w-50" style="padding-left: 80px;">
+                <h5>Kerala's No.1</h5>
+                <h6>Software Training Institute in Kochi (Cochin) |Luminar Technolab </h6>
+                <p class="mt-5">Luminar Technolab is a No.1 Software Training Institute in Kochi & Mavoor Road Calicut, offering you Job Oriented courses on Data Science, Data Analytics, Machine Learning, Python, Big Data & Other Certified IT programs</p>
+              <div class="row mt-4 mb-4" style="width: 230px;">
+                  <div class="col" style="border-right: 3px solid #6e1f8e;"><img src="data:image/jpeg;base64,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" alt="" style="height: 80px;"></div>
+                  <div class="col"><img src="https://cdn.freebiesupply.com/logos/large/2x/iso-31-logo-svg-vector.svg" alt="" style="height: 80px;"></div>
+              </div>
+              <button class="btn rounded-pill ps-3 pe-3 mb-4 text-light" style="background-color: #6e1f8e;">View Courses</button>
+              </div>
+              <div class="col text-end">
+                  <img src="./Images/model-img.png" class=" text-end me-5" alt="..." style="scale: 80%;">
+              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-caption col text-start text-dark w-50" style="padding-left: 80px;">
+                <h5>Kerala's No.1</h5>
+                <h6>Software Training Institute in Kochi (Cochin) |Luminar Technolab </h6>
+                <p class="mt-5">Luminar Technolab is a No.1 Software Training Institute in Kochi & Mavoor Road Calicut, offering you Job Oriented courses on Data Science, Data Analytics, Machine Learning, Python, Big Data & Other Certified IT programs</p>
+              <div class="row mt-4 mb-4" style="width: 230px;">
+                  <div class="col" style="border-right: 3px solid #6e1f8e;"><img src="data:image/jpeg;base64,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" alt="" style="height: 80px;"></div>
+                  <div class="col"><img src="https://cdn.freebiesupply.com/logos/large/2x/iso-31-logo-svg-vector.svg" alt="" style="height: 80px;"></div>
+              </div>
+              <button class="btn rounded-pill ps-3 pe-3 mb-4 text-light" style="background-color: #6e1f8e;">View Courses</button>
+              </div>
+              <div class="col text-end">
+                  <img src="./Images/review-img.png" class=" text-end me-5" alt="..." style="scale: 80%;">
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+      <!-- Registered With -->
+      <div class="border rounded-pill w-50 mx-auto" style="background-color: #984db5;">
+        <p class="text-center pt-1 m-1 text-light fs-6">Registered with Ministry of Corporate Affairs   |   CIN:UDW0237RHDF82HDK9123</p>
+      </div>
+
+
+      <!-- 100% Placement box -->
+      <div class="row mt-5">
+
+        <div class="col"  style="display: flex; flex-direction: row;">
+
+            <div class="ms-auto d-block">
+                <div class="row rounded ms-5 mb-3 mt-5 ms-auto" style="height: 100px; width: 100px; background-color: #6e1f8e;"></div>
+                <div class="row ms-5 placement-card"> 
+                    <img class="border rounded p-0" style="height: 250px; width: 250px; object-fit: cover; object-position:left;" src="https://img.freepik.com/photos-gratuite/jolie-femme-aux-cheveux-boucles-regarde-cote-expression-heureuse-reveuse-sourit-largement-exprime-bonnes-emotions-porte-pull-vert-apparence-attrayante-isolee-mur-rose-espace-vide_273609-42630.jpg" alt="">
+                    <div class="placement-details rounded">
+                      <h3>Aleena Mary</h3>
+                      <p>ML Developer Trainee</p>
+                      <h6>Graduate in:</h6>
+                      <p>M.Sc Physics, The Cochin College</p>
+                      <h6>For Placement in:</h6>
+                      <p>Apps Team Technologies</p>
+                    </div>
+                </div>
+                <div class="row"></div>
+            </div>
+
+            <div>
+                <div class="row ms-4 mb-3 placement-card"> 
+                  <img class="border rounded p-0" style="height: 250px; width: 250px; object-fit: cover; object-position:left;" src="https://img.freepik.com/free-photo/smiling-young-male-professional-standing-with-arms-crossed-while-making-eye-contact-against-isolated-background_662251-838.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703808000&semt=ais" alt="">
+                  <div class="placement-details rounded">
+                    <h3>Amal KS</h3>
+                    <p>Software Developer</p>
+                    <h6>Graduate in:</h6>
+                    <p>B.Sc CS 2019, Sree Narayana Arts and Science College</p>
+                    <h6>For Placement in:</h6>
+                    <p>Apps Team Technologies</p>
+                  </div>
+                </div>
+                <div class="row ms-4 placement-card">
+                   <img class="border rounded p-0" style="height: 250px; width: 250px; object-fit: cover; object-position:center;" src="https://media.istockphoto.com/id/1360585349/photo/hey-you-gesture-modern-friendly-young-african-american-girl-pointing-fingers-at-camera.jpg?s=612x612&w=0&k=20&c=ik-v4dgQJb7LeAyYEfEn4UQQRD_K3UDhymxJSophyFs=" alt="">
+                   <div class="placement-details rounded">
+                    <h3>Sradha MS</h3>
+                    <p>ML Developer Trainee</p>
+                    <h6>Graduate in:</h6>
+                    <p>M.Sc Physics, The Cochin College</p>
+                    <h6>For Placement in:</h6>
+                    <p>Apps Team Technologies</p>
+                  </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="col-5 placements mt-5 me-5">
+            <h5 class="mt-5">Our mission is to provide</h5>
+            <h1>100% placements to students</h1>
+            <p>Our mission is to provide 100% placements to students those who enrol for our specialised courses. Our Placement assistance starts with Resume preparation, Mock Interviews by real working professionals, Aptitude test training & Interviews. We will provide unlimited placement assistance till the student is placed satisfactorily.</p>
+            <button class="btn text-light border-none rounded-pill pe-4 ps-4" style="background-color: #6e1f8e;">View All</button>
+        </div>
+
+        <div class="col-1"></div>
+
+      </div>
+
+
+
+      <!-- Courses -->
+
+      <div class="courses-box mt-5 pt-5 pb-5">
+
+        <div class="row ps-5">
+          <div class="col-5 ps-5 mt-5 text-light">
+            <h1 class="mt-5">
+              100% Job Oriented
+            </h1>
+            <h4>TRAINING PROGRAMS</h4>
+            <br>
+            <p>We are focused on providing advanced level software training like Big Data Training, Hadoop Training, Data Science Training, Python Training, Machine Learning Training, Selenium Training in Cochin Kerala.</p>
+          </div>
+          <div class="col-2"></div>
+          <div class="course-card col-4 p-0">
+            <div class=" border-2 border rounded bg-light ps-3 pb-5">
+              <img src="./Images/asp-img.png" alt="" style="height: 80px;" class="mb-5 mt-5">
+              <h4 class="mb-4" style="color: #6e1f8e;"><b>Asp.net MVC with Angular</b></h4>
+              <p style="color: rgb(69, 69, 69);"> <b>Next Batch:</b>
+                Cochin Jan 10th 2024 ( 10:30 am - 12:30 pm)</p>
+              <p style="color: rgb(69, 69, 69);" class="mb-4"> <b>Duration:</b>
+                5 Months, 5 Days a Week, 2 Hours/day</p>
+                <a href="" class="fs-5" style="color: #6e1f8e;"><b>View More</b></a>
+            </div>
+            <div class="course-overlay rounded">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row ps-5 mt-4  ">
+          <div class="col-2 ps-5 me-5">
+            <button class="btn rounded-pill ps-4 pe-4 ms-auto ms-5 pt-2 pb-2" style="background-color: white; color: #6e1f8e;"><b>View All</b></button>
+          </div>
+          <div class="course-card col-4 p-0 ms-5 me-4">
+            <div class=" border-2 border rounded bg-light ps-3 pb-5">
+              <img src="./Images/testing-img.png" alt="" style="height: 80px;" class="mb-5 mt-5">
+              <h4 class="mb-4" style="color: #6e1f8e;"><b>Software Testing Specialist</b></h4>
+              <p style="color: rgb(69, 69, 69);"> <b>Next Batch:</b>
+                Cochin Jan 10th 2024 ( 10:30 am - 12:30 pm)</p>
+              <p style="color: rgb(69, 69, 69);" class="mb-4"> <b>Duration:</b>
+                5 Months, 5 Days a Week, 2 Hours/day</p>
+                <a href="" class="fs-5" style="color: #6e1f8e;"><b>View More</b></a>
+            </div>
+            <div class="course-overlay rounded">
+
+            </div>
+          </div>
+          <div class="course-card col-4 p-0">
+            <div class=" border-2 border rounded bg-light ps-3 pb-5">
+              <img src="./Images/fullstack-img.png" alt="" style="height: 80px;" class="mb-5 mt-5">
+              <h4 class="mb-4" style="color: #6e1f8e;"><b>MEA(R)N Stack Development Expert</b></h4>
+              <p style="color: rgb(69, 69, 69);"> <b>Next Batch:</b>
+                Cochin Jan 10th 2024 ( 10:30 am - 12:30 pm)</p>
+              <p style="color: rgb(69, 69, 69);" class="mb-4"> <b>Duration:</b>
+                5 Months, 5 Days a Week, 2 Hours/day</p>
+                <a href="" class="fs-5" style="color: #6e1f8e;"><b>View More</b></a>
+            </div>
+            <div class="course-overlay rounded">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+      <!-- instagram feed -->
+      <div class="row mt-5">
+        <div class="col-5 text-end"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="" height="60px"></div>
+        <div class="col mt-1" style="color: #6e1f8e;"><h1>Instagram Feed</h1></div>
+      </div>
+
+      <div id="insta-feed" class="row col-9 mx-auto mt-3" style="height: 700px; overflow-y: auto;">
+        <div class="col mt-3"><img src="https://media.istockphoto.com/id/1354898581/photo/shot-of-a-young-businessman-using-a-laptop-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=dDDNcvIoG-4VdO01ZlENqODBoNocT434vIFp0duuTZM=" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZW1wbG95ZWV8ZW58MHx8MHx8fDA%3D" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://media.istockphoto.com/id/1387942892/photo/smiling-young-indian-man-freelancer-using-laptop-computer-typing-working-online-coworking-or.jpg?s=612x612&w=0&k=20&c=TJ5q6Q1tr4bH3JW4_-EQA6jR4xdLg4-1qTOgZTWCdL8=" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://www.shutterstock.com/image-photo/attractive-african-young-confident-businesswoman-600nw-1712082700.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM=" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://t4.ftcdn.net/jpg/03/30/18/59/360_F_330185963_XgQLEwslG1Gbd7uvJDidjOWa0nj6CJrZ.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://t4.ftcdn.net/jpg/01/91/85/09/360_F_191850934_SmRr7k4uy6O11P0eSCH8KwGJtnX81ywK.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://t4.ftcdn.net/jpg/06/12/73/89/360_F_612738927_LIcFCiKHQhHq9R1QhkVRKvT6RelYUmgv.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://www.shutterstock.com/image-photo/head-shot-handsome-millennial-30s-600nw-1854710668.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.jpg?s=612x612&w=0&k=20&c=kPvoBm6qCYzQXMAn9JUtqLREXe9-PlZyMl9i-ibaVuY=" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://img.freepik.com/free-photo/portrait-young-indian-top-manager-t-shirt-tie-crossed-arms-smiling-white-isolated-wall_496169-1513.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://img.freepik.com/premium-photo/i-love-what-i-cropped-portrait-attractive-young-businesswoman-working-her-laptop-while-sitting-office_590464-62606.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://media.istockphoto.com/id/1354898581/photo/shot-of-a-young-businessman-using-a-laptop-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=dDDNcvIoG-4VdO01ZlENqODBoNocT434vIFp0duuTZM=" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZW1wbG95ZWV8ZW58MHx8MHx8fDA%3D" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://media.istockphoto.com/id/1387942892/photo/smiling-young-indian-man-freelancer-using-laptop-computer-typing-working-online-coworking-or.jpg?s=612x612&w=0&k=20&c=TJ5q6Q1tr4bH3JW4_-EQA6jR4xdLg4-1qTOgZTWCdL8=" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://www.shutterstock.com/image-photo/attractive-african-young-confident-businesswoman-600nw-1712082700.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://media.istockphoto.com/id/1399565382/photo/young-happy-mixed-race-businessman-standing-with-his-arms-crossed-working-alone-in-an-office.jpg?s=612x612&w=0&k=20&c=buXwOYjA_tjt2O3-kcSKqkTp2lxKWJJ_Ttx2PhYe3VM=" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://t4.ftcdn.net/jpg/03/30/18/59/360_F_330185963_XgQLEwslG1Gbd7uvJDidjOWa0nj6CJrZ.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://t4.ftcdn.net/jpg/01/91/85/09/360_F_191850934_SmRr7k4uy6O11P0eSCH8KwGJtnX81ywK.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://t4.ftcdn.net/jpg/06/12/73/89/360_F_612738927_LIcFCiKHQhHq9R1QhkVRKvT6RelYUmgv.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://www.shutterstock.com/image-photo/head-shot-handsome-millennial-30s-600nw-1854710668.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.jpg?s=612x612&w=0&k=20&c=kPvoBm6qCYzQXMAn9JUtqLREXe9-PlZyMl9i-ibaVuY=" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://img.freepik.com/free-photo/portrait-young-indian-top-manager-t-shirt-tie-crossed-arms-smiling-white-isolated-wall_496169-1513.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+        <div class="col mt-3"><img src="https://img.freepik.com/premium-photo/i-love-what-i-cropped-portrait-attractive-young-businesswoman-working-her-laptop-while-sitting-office_590464-62606.jpg" alt="" height="300px" width="300px" style="object-fit: cover;"> </div>
+      </div>
+
+
+      <!-- Companies Carousel -->
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-inner w-75 mx-auto mt-5" style="height: 100px;">
+          <div class="carousel-item active"  data-bs-interval="2500">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/1280px-Tata_Consultancy_Services_Logo.svg.png" class="" height="80px" alt="...">
+            <img src="https://logicplum.com/blog/wp-content/uploads/2021/03/lp_logo.png" class="" height="60px" alt="...">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX_Z0w5Sn-8F8PXvBuNbXmt8G07gOoMY7rCGa4NeGI-A&s" class="me-4" height="50px" alt="...">
+            <img src="https://www.claysys.com/app/themes/claysys-2019/assets/images/claysys-logo.png" class="me-4" height="60px" alt="...">
+            <img src="https://appexchange.salesforce.com/image_host/cd1da633-642c-4bd1-9b75-a9e0907e8b16.png" class="" height="60px" alt="...">
+          </div>
+          <div class="carousel-item"  data-bs-interval="2500">
+            <img src="https://upload.wikimedia.org/wikipedia/en/f/f8/Impelsys_Logo.jpg" class="" height="80px" alt="...">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAf8s2KjEXXtJkLlUcorJcC5bj2eHcRUAOo1zhRQRpDQ&s" class="me-4" height="50px" alt="...">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqOK4V5Cgllwov5FNd1r8kLwKxkDLtbMFCpQ7Jq5DHVShZMcOOLYY_POQtidVnYLdlig&usqp=CAU" class="me-4" height="45px" alt="...">
+            <img src="https://thomsuninfocare.com/wp-content/uploads/2021/09/logo.png" class="me-4" height="45px" alt="...">
+            <img src="https://web.newagesme.com/newagesysindia_2020_v2/wp-content/uploads/2019/07/NewAgeSys_logo.png" class="" height="55px" alt="...">
+          </div>
+          <div class="carousel-item"  data-bs-interval="2500">
+            <img src="https://logidots.com/wp-content/uploads/2021/01/logidots_logo_website.png" class="me-3" height="50px" alt="...">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Cognizant_logo_2022.svg/2560px-Cognizant_logo_2022.svg.png" class=" me-4" height="40px" alt="...">
+            <img src="data:image/png;base64,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" class="me-4" height="50px" alt="...">
+            <img src="https://assets-global.website-files.com/626eb090184317d9a8b136e5/6272ef4ab7a134dfd3298d6e_EnFin_Primary.png" class="me-4" height="60px" alt="...">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/1280px-Infosys_logo.svg.png" class="me-4" height="50px" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <!-- Luminar Banner-1 -->
+      <div class="row mt-3">
+        <div class="col-9 ps-3 mx-auto banner" style="color: #6e1f8e;">
+          <h1 style="font-size: 50px;">Luminar Technolab</h1>
+          <h4>is an interesting platform that will provide your education in interactive ways</h4>
+          <div class="banner-overlay">
+            <img src="./Images/grid.png" alt="" width="650px" height="120px" style="object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Cards -->
+
+      <div class="row mt-0 mb-0">
+
+        <div class="col"></div>
+
+        <div class="card col-3 text-center p-5 me-3 bg-light mt-2 rounded-3 mb-5">
+          <div class="row mb-5"><i class="fa-solid fa-briefcase fa-2xl" style="color: #6e1f8e;"></i></div>
+          <div class="row mb-3"><h5><b>Placement Assurance</b></h5></div>
+          <p style="text-align: justify;">Our mission is to provide 100% placements to students those who enrol for our specialised courses. Our Placement assistance starts with Resume preparation, Mock Interviews by real working professionals, Aptitude test training & Interviews.</p>
+        </div>
+
+        <div class="card col-3 text-center p-5 me-3 bg-light mt-2 rounded-3 mb-5">
+          <div class="row mb-5"><i class="fa-solid fa-scroll fa-2xl" style="color: #6e1f8e;"></i></div>
+          <div class="row mb-3"><h5><b>Certification Worth</b></h5></div>
+          <p style="text-align: justify;">Our mission is to provide 100% placements to students those who enrol for our specialised courses. Our Placement assistance starts with Resume preparation, Mock Interviews by real working professionals, Aptitude test training & Interviews.</p>
+        </div>
+
+        <div class="card col-3 text-center p-5 bg-light mt-2 rounded-3 mb-5">
+          <div class="row mb-5"><i class="fa-solid fa-person-chalkboard fa-2xl" style="color: #6e1f8e;"></i></div>
+          <div class="row mb-3"><h5><b>Professional Tutors</b></h5></div>
+          <p style="text-align: justify;">Our mission is to provide 100% placements to students those who enrol for our specialised courses. Our Placement assistance starts with Resume preparation, Mock Interviews by real working professionals, Aptitude test training & Interviews.</p>
+        </div>
+
+        <div class="col"></div>
+
+      </div>
+
+
+        <!-- Luminar Banner-2 -->
+        <div class="row mt-5">
+          <div class="col-9 ps-3 mx-auto banner" style="color: #6e1f8e;">
+            <h4>Check what people are saying about</h4>
+            <h1 style="font-size: 50px;">Luminar Technolab</h1>
+          </div>
+        </div>
+
+
+        <!-- Student Reviews -->
+
+        <div id="carouselExample" class="carousel slide mt-" data-bs-ride="carousel">
+          
+          <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="3000">
+              <div class="row">
+                <div class="col-2"></div>
+              <div class="col-4 card" style=" height: 280px;">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fa-solid fa-quote-left fa-2xl mb-5" style="color: #6e1f8e;"></i></h5>
+                  <p class="card-text">I had taken a course on Python Django Full Stack Web Development and they have a great track record of placements as I happened to get a job with their guidance and help.</p>
+                  <p class="m-0 p-0" style="color: #6e1f8e;"><b>Arathy S Menon</b></p>
+                  <p>Python Developer</p>
+                </div>
+              </div>
+              
+              <div class="col-3">
+                <img class="rounded-3" src="https://2.bp.blogspot.com/-Oy5OJIbmxTU/W4f_D17KEHI/AAAAAAAAeFA/k-xYGllhjcwp3ghjsxxaU6NbAYoYS-HIwCLcBGAs/s1600/5%2BDSC_1617a.jpg" alt="" width="350px" height="430px" style="object-fit: cover;">
+              </div>
+              <div class="col mt-5">
+                <img class="rounded-3" src="https://i.pinimg.com/736x/aa/7d/2d/aa7d2db347661782688bf1ca70c8a5c4.jpg" alt="" width="250px" height="300px" style="object-fit: cover; margin-top: 80px;">
+              </div>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4 card" style=" height: 280px;">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fa-solid fa-quote-left fa-2xl mb-5" style="color: #6e1f8e;"></i></h5>
+                    <p class="card-text">Great Place to learn python. i have completed python django full stack web development course here. fully satisfied with the training. the trainers are very helpful. best place to develop our career</p>
+                    <p class="m-0 p-0" style="color: #6e1f8e;"><b>Bibin Joy</b></p>
+                    <p>Data Science Intern</p>
+                  </div>
+                </div>
+                
+                <div class="col-3" >
+                  <img class="rounded-3" src="https://i.pinimg.com/736x/aa/7d/2d/aa7d2db347661782688bf1ca70c8a5c4.jpg" alt="" width="350px" height="430px" style="object-fit: cover;">
+                </div>
+                <div class="col mt-5">
+                  <img class="rounded-3" src="https://img.freepik.com/premium-photo/portrait-young-bearded-indian-businessman-against-black-background-moody-lighting_466689-45532.jpg?size=626&ext=jpg" alt="" width="250px" height="300px" style="object-fit: cover; margin-top: 80px;">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4 card" style=" height: 280px;">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fa-solid fa-quote-left fa-2xl mb-5" style="color: #6e1f8e;"></i></h5>
+                    <p class="card-text">The faculty were cordial and cooperative and willing to help with smallest issues. I am offering my gratefulness to the Director of Luminar Technolab Rahul sir for his great support.</p>
+                    <p class="m-0 p-0" style="color: #6e1f8e;"><b>Thomas John</b></p>
+                    <p>QA Tester</p>
+                  </div>
+                </div>
+                
+                <div class="col-3" >
+                  <img class="rounded-3" src="https://img.freepik.com/premium-photo/portrait-young-bearded-indian-businessman-against-black-background-moody-lighting_466689-45532.jpg?size=626&ext=jpg" alt="" width="350px" height="430px" style="object-fit: cover;">
+                </div>
+                <div class="col mt-5">
+                  <img class="rounded-3" src="https://2.bp.blogspot.com/-Oy5OJIbmxTU/W4f_D17KEHI/AAAAAAAAeFA/k-xYGllhjcwp3ghjsxxaU6NbAYoYS-HIwCLcBGAs/s1600/5%2BDSC_1617a.jpg" alt="" width="250px" height="300px" style="object-fit: cover; margin-top: 80px;">
+                </div>
+              </div>
+            </div>
+          
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+        <!-- Mission and Vision -->
+        <div class="row mb-5" style="margin-top: 100px;">
+
+          <div class="col me-0 text-end">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1skqyoYwxXQ?si=ycI6PZAENqqKduhq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="col ps-5 pe-5 mt-5">
+            <i class="fa-solid fa-video fa-2xl" style="color: #6e1f8e;"></i>
+            <p class="mt-2" style="color: #6e1f8e; font-size: 14px;">July 29 2021</p>
+            <h1>Our Mission and Vision</h1>
+            <p class="me-5 pe-5" style="text-align: justify;">Our mission is to provide 100% placements to students those who enrol for our specialised courses. Our Placement assistance starts with Resume preparation, Mock Interviews by real working professionals, Aptitude test training & Interviews. We will provide unlimited placement assistance till the student is placed satisfactorily</p>
+          </div>
+
+        </div>
+
+
+        <!-- Technology Stack -->
+        <div class="row bg-light ps-5 pe-5 mt-5 pt-5 pb-5">
+
+          <div class="col ps-5 pt-5">
+            <div class="img-box ms-5" style="height: 500px; width: 500px;">
+              <div class="img-white rounded-4" style="width: 300px; height: 300px; background-color: #984db5;"></div>
+              <div class="img-overlay-1"><img class="rounded-3" width="200px" height="200px" style="object-fit: cover;" src="https://img.freepik.com/free-photo/male-entrepreneur-working-computer-home_637285-12152.jpg" alt=""></div>
+              <div class="img-overlay-2"><img class="rounded-3" width="200px" height="200px" style="object-fit: cover;" src="https://img.freepik.com/premium-photo/young-happy-cute-business-woman-sit-indoors-home-office-using-laptop-computer_650366-2829.jpg" alt=""></div>
+            </div>
+          </div>
+
+          <div class="col pt-5">
+            <h1 style="font-size: 50px; color: #6e1f8e;">Technology Stack</h1>
+            <p class="w-75">Our mission is to provide 100% placements to students those who enrol for our specialised courses.</p>
+            
+            <!-- carousel -->
+            <div class="bg-light">
+              <div id="carouselExampleIndicators" class="carousel slide autoplay" style="height: 400px;" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active"  data-bs-interval="2000">
+
+                    <div class="w-75">
+                    <div class="row">
+                      <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img width="120px" height="120px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQodJeKSrQsTKNFQTgD3rw-hC4YIzmzGQJRzIJpkzKutsDXitqsdQzwemQssSD_tuW1HwE&usqp=CAU" alt="">
+                    </div>
+                    <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img class="ps-3 pt-4 mt-1" style="object-fit: cover;" width="100px" height="100px" src="https://logos-world.net/wp-content/uploads/2021/10/Python-Symbol.png" alt="">
+                    </div>
+                    <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img class="mt-2" width="120px" height="120px" src="https://cdn.worldvectorlogo.com/logos/devops-2.svg" alt="">
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img width="120px" height="120px" src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/JQuery_logo-512.png" alt="">
+                    </div>
+                    <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img class="p-4" width="120px" height="120px" src="data:image/png;base64,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" alt="">
+                    </div>
+                    <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img class="p-3" width="120px" height="120px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" alt="">
+                    </div>
+                    </div>
+                  </div>
+                  
+                </div>
+
+
+                <div class="carousel-item"  data-bs-interval="2000">
+                    <div class="w-75">
+                    <div class="row">
+                      <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225); background-color:white;">
+                      <img class="p-2 pt-3" width="120px" height="120px" src="https://miro.medium.com/v2/resize:fit:384/1*0U5P08i4VvBWEmQ9Z3Pklw.png" alt="">
+                    </div>
+                    <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img class="pt-2" width="120px" height="120px" src="https://ih1.redbubble.net/image.367014180.4385/st,small,507x507-pad,600x600,f8f8f8.u3.jpg" alt="">
+                    </div>
+                    <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225); background-color:white;">
+                      <img class="p-4" width="120px" height="120px" src="https://whatthelogo.com/storage/logos/magento-270338.png" alt="">
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img class="p-3" width="120px" height="120px" src="https://www.pngall.com/wp-content/uploads/13/Android-Logo-PNG-Clipart.png" alt="">
+                    </div>
+                    <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img class="p-2" width="120px" height="120px" style="object-fit: contain;" src="https://isagebrum.com/images/technology/dynamo_db-image.svg" alt="">
+                    </div>
+                    <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img class="pt-3" width="120px" height="120px" style="object-fit: contain;" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/mongodbImage.png" alt="">
+                    </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="carousel-item"  data-bs-interval="2000">
+                  <div class="w-75">
+                    <div class="row">
+                      <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img width="120px" height="120px" src="https://www.svgrepo.com/show/303251/mysql-logo.svg" alt="">
+                    </div>
+                    <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225); background-color:white;">
+                      <img class="pt-3" width="120px" height="120px" src="https://www.freepnglogos.com/uploads/php-logo-png/php-logo-parental-advisory-explicit-content-logo-png-transparent-3.png" alt="">
+                    </div>
+                    <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225); background-color:white;">
+                      <img class="p-3 mt-2" width="120px" height="120px" src="https://msaccesssolutions.com/images/asp-net-logo.png" alt="">
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img class="p-3" width="120px" height="120px" src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="">
+                    </div>
+                    <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img class="p-4" width="120px" height="120px" src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png" alt="">
+                    </div>
+                    <div class="col m-3 rounded-3" style="width: 130px; height: 130px; box-shadow: 0px 0px 10px 5px rgba(155, 155, 155, 0.225);">
+                      <img class="p-4" width="120px" height="120px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png" alt="">
+                    </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+        <!-- Final Banner -->
+        <div class="pen-banner pt-5 bg-danger">
+          <div class="mx-auto text-center mt-5 w-75">
+            <h1 class=" text-light fs-2 mt-5">
+              So why wait? Start one of our high quality courses from the world's leading experts today!
+            </h1>
+            <p class="mt-4" style="color: #ac9348;">If You Have Any Questions Call Us / Whatsapp On +91 80866 51651</p>
+            <button class="btn bg-light pe-4 ps-4 pt-2 pb-2 rounded-pill mt-4 fs-5" style="color: #6e1f8e; font-weight: 600;">JOIN NOW</button>
+          </div>
+        </div>
+        
+
+
+
+        <!-- Footer -->
+        
+<footer class="text-center text-lg-start bg-body-tertiary text-muted pt-5">
+
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <img src="https://www.luminartechnolab.com/static/media/logo%20vanner%200.1.ad159943.png" alt="luminar-logo" style="height: 70px;">
+          </h6>
+           <!-- Grid container -->
+  <div>
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+      data-mdb-ripple-init
+        class="btn text-white btn-floating m-1 rounded-circle"
+        style="background-color: #3b5998;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1 rounded-circle"
+        style="background-color: #55acee;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1 rounded-circle"
+        style="background-color: #dd4b39;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1 rounded-circle"
+        style="background-color: #ac2bac;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        data-mdb-ripple-init
+        class="btn text-white btn-floating m-1 rounded-circle"
+        style="background-color: #0082ca;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <div class="row text-center w-50 mt-4">
+        <div class="col p-1"><img src="data:image/jpeg;base64,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" alt="" style="height: 53px;"></div>
+        <div class="col p-1"><img src="https://cdn.freebiesupply.com/logos/large/2x/iso-31-logo-svg-vector.svg" alt="" style="height: 52px;"></div>
+      </div>
+      
+      
+    </section>
+    <!-- Section: Social media -->
+  </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="footer-text col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color:#6e1f8e ;border-bottom: 1px solid #6e1f8e; padding-bottom: 10px;">
+            Courses
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Software Testing Specialist</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">MEA(R)N Stack Web Development Expert - Angular & React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Android Developer Expert Training In Kochi- Flutter</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Python Django - Angular- Full Stack Web Development Expert</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">PYTHON DATA SCIENCE - ML - AI - & Power BI</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Asp.net MVC with Angular - Full Stack</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Java Spring Full Stack Development</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="footer-text col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color:#6e1f8e ;border-bottom: 1px solid #6e1f8e; padding-bottom: 10px;">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Teachers & Staff</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Gallery</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Our Courses</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Refund & Cancellation Policy</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Certification & Affiliation</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color:#6e1f8e ;border-bottom: 1px solid #6e1f8e; padding-bottom: 10px;">Contact Us</h6>
+          <p class="mb-0"  style="color: #6e1f8e;"><i class="fas fa-home me-3"></i> <b>Cochin</b></p>
+          <p  class="m-0">Luminar Technolab Pvt Ltd
+            3rd Floor, Vallamattam Estate,
+            Seaport - Airport Rd, CSEZ,
+            Kakkanad, Cochin, Kerala - 682037</p>
+          <p class="m-0" style="color: #6e1f8e;">
+            <i class="fas fa-envelope me-3"></i>
+            contact@luminartechnolab.com
+          </p>
+          <p style="color: #6e1f8e;"><i class="fas fa-phone me-3"></i> +91 8086 651 651</p>
+
+          <p class="mb-0 mt-5" style="color: #6e1f8e;"><i class="fas fa-home me-3"></i> <b>Calicut</b> </p>
+          <p class="m-0">Luminar Technolab Pvt Ltd
+            2nd Floor, 61/10222 ,
+            Mullath Building,
+            Opp. KSRTC Bus Stand,
+            Mavoor Road, Calicut, Kerala-673001</p>
+          <p class="m-0" style="color: #6e1f8e;">
+            <i class="fas fa-envelope me-3"></i>
+            contact@luminartechnolab.com
+          </p>
+          <p style="color: #6e1f8e;"><i class="fas fa-phone me-3"></i> +91 8086 531 531, 0495 - 3573001</p>
+          
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+
+ 
+  <!-- Section: Links  -->
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © Luminar Technolab 2024 | Developed by Deepnetsoft <a style="color: #6e1f8e; text-decoration: none; font-weight: 600;" href="">Privacy</a> & <a style="color: #6e1f8e; text-decoration: none; font-weight: 600;" href="">Terms of Use</a>
+  </div>
+  <!-- Copyright -->
+
+  <!-- Stickies -->
+  <div class="w-100 text-end fixed-bottom" style="bottom: 80px;">
+    <div class="ms-auto me-3" style="width: 50px; height: 50px; border: none; border-radius: 25px; background-color: #6e1f8e;">
+      <a href="#home"><i class="fa-solid fa-circle-chevron-up fa-xl text-light mt-4 me-2 pe-1" style="color: #6e1f8e;"></i></a>
+    </div>
+  </div>
+  <div class="row pb-4 me-1 fixed-bottom">
+    <div class="col text-start"><i class="fa-brands fa-whatsapp fa-2xl p-3"></i></div>
+    <div class="col text-end"><div class="ms-auto" style="width: 50px; height: 50px; border: none; border-radius: 25px; background-color: #6e1f8e;">
+      <i class="fa-solid fa-message fa-xl text-light pt-4 pe-2 me-1" style="color: #6e1f8e;"></i>
+    </div>
+    </div>
+  </div>
+
+</footer>
+<!-- Footer -->
+        
+
+</body>
+</html>
